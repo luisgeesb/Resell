@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity2">
+
+
+    <Spinner
+        android:id="@+id/condition_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/price_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/condition_spinner"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/location_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_edit_text"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/post_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Post" />
+
+    <RelativeLayout
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/post_button"
+        android:layout_below="@+id/location_edit_text"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/summary_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
